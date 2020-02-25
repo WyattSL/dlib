@@ -5,7 +5,9 @@ class Stage() {
   constructor(token) {
     this.token = token;
   }
-  async 
+  async stop() {
+    client.destroy();
+  }
 }
 
 module.exports = Stage;
